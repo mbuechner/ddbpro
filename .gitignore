@@ -28,3 +28,7 @@
 /web/sites/all/themes/*
 !/web/sites/all/modules/custom/
 !/web/sites/all/themes/custom/
+
+/web/sites/all/themes/custom/bootstrap_ddbpro/node_modules/
+/web/sites/all/themes/custom/bootstrap_ddbpro/npm-debug.log
+/web/sites/all/themes/custom/bootstrap_ddbpro/.sass-cache/
