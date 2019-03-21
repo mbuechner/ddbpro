@@ -1,1 +1,1 @@
-# ddbpro
+# DDBpro - Das Portal für Datenpartner der Deutschen Digitalen Bibliothek
