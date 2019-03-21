@@ -6,7 +6,7 @@ Make sure Composer is installed correctly and run the following command in proje
 ```
 > composer update
 ```
-For testing and developing [Drush](https://www.drush.org/) is providing a webserver.
+For testing and developing purposes [Drush](https://www.drush.org/) does provide a webserver. Run:
 ```
 > vendor/drush/drush/drush rs
 ```
@@ -15,7 +15,9 @@ Website is available: http://127.0.0.1:8888/
 ## Core & Module Updates
 Drupal's core, all modules and all necessary libraries are managed by Composer.
 
-Install new module? Composer. Update existing modules? Composer. Does a module need a specific PHP library? Composer. ;-)
+- Install new module? Composer.
+- Update existing modules? Composer.
+- Does a module need a specific PHP library? Composer. ;-)
 
 Get a list of update-able packages.
 ```
