@@ -4,7 +4,6 @@ This is a [Composer](https://getcomposer.org/) project for [DDBpro](http://pro.d
 ## Migrate existing DDBpro
 ### 1. Database
 The connection (to an existing) database can be configured in `web/sites/default/settings.php`. Add something like:
-
 ```
 $databases['default']['default'] = array(
   'driver' => 'mysql',
@@ -19,11 +18,12 @@ $databases['default']['default'] = array(
 A possible proxy configuration can also be configured here.
 
 ### 2. Build Project
-See below.
+```
+> composer update
+```
 
 ### 3. Rebuild Registry
-The path to all Drupal modules has (probably) changed and Drupal won't run correctly. To fix that, it's necessary to rebuild the registry. Therefor the module [Registry Rebuild](https://www.drupal.org/project/registry_rebuild) is already installed. Run:
-
+The pathes to all Drupal modules (might) have been changed and Drupal won't run correctly. To fix that, it's necessary to rebuild the registry. Therefor the module [Registry Rebuild](https://www.drupal.org/project/registry_rebuild) is already installed. Run:
 ```
 > cd cd web/sites/all/modules/contrib/registry_rebuild
 > php registry_rebuild.php
@@ -44,6 +44,9 @@ Run:
 ### 5. Files
 DDBpro specific files are stored in the directory `download/` with its subdirectories `private/` and `public/`. The folder `download/` should be located in `web/` within the DDBpro Composer project.
 
+### 6. Done
+Yeah! :-)
+
 ## Build Project
 Make sure Composer is installed correctly and run the following command in project's root.
 ```
@@ -58,8 +61,8 @@ Website is available: http://127.0.0.1:8888/
 ## Core & Module Updates
 Drupal's core, all modules and all necessary libraries are managed by Composer.
 
-- Install new module? Composer.
-- Update existing modules? Composer.
+- Install new module? Do it with Composer.
+- Update existing modules? Do it with Composer.
 - Does a module need a specific PHP library? Composer. ;-)
 
 Get a list of update-able packages.
