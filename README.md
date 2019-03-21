@@ -2,10 +2,7 @@
 This is a [Composer](https://getcomposer.org/) project for [DDBpro](http://pro.deutsche-digitale-bibliothek.de/).
 
 ## Migrate existing DDBpro
-### 1. Files
-DDBpro specific files are stored in the directory `download/` with its subdirectories `private/` and `public/`. The folder `download/` should be located in `web/` within the DDBpro Composer project.
-
-### 2. Database
+### 1. Database
 The connection (to an existing) database can be configured in `web/sites/default/settings.php`. Add something like:
 
 ```
@@ -21,21 +18,31 @@ $databases['default']['default'] = array(
 ```
 A possible proxy configuration can also be configured here.
 
-### 3. Build Project
+### 2. Build Project
 See below.
 
-### 4. Rebuild Registry
+### 3. Rebuild Registry
 The path to all Drupal modules has (probably) changed and Drupal won't run correctly. To fix that, it's necessary to rebuild the registry. Therefor the module [Registry Rebuild](https://www.drupal.org/project/registry_rebuild) is already installed. Run:
 
 ```
-> cd sites/all/modules/registry_rebuild
+> cd cd web/sites/all/modules/contrib/registry_rebuild
 > php registry_rebuild.php
 ```
 
-Rebuilding the registry is only necessary once, while migrating an existing DDBpro instance to DDBpro Composer. The Registry Rebuild module can be removed afterwards (`composer remove registry_rebuild`).
+Rebuilding the registry is only necessary once, while migrating an existing DDBpro instance to DDBpro Composer. The Registry Rebuild module can be removed afterwards (`composer remove drupal/registry_rebuild`).
 
-### 5. Clear Cache
-See below.
+### 4. Clear Cache and Run Database Updates
+Run:
+```
+> vendor/drush/drush/drush cc all
+```
+...and...
+```
+> vendor/drush/drush/drush updatedb
+```
+
+### 5. Files
+DDBpro specific files are stored in the directory `download/` with its subdirectories `private/` and `public/`. The folder `download/` should be located in `web/` within the DDBpro Composer project.
 
 ## Build Project
 Make sure Composer is installed correctly and run the following command in project's root.
