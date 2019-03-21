@@ -16,16 +16,19 @@
 !/web/sites/
 /web/sites/*
 !/web/sites/all/
-
-!/web/sites/all/
 /web/sites/all/*
+!/web/sites/default/
+/web/sites/default/*
+
 !/web/sites/all/modules/
 !/web/sites/all/themes/
+!/web/sites/default/settings.example.php
 
 !/web/sites/all/modules/
 !/web/sites/all/themes/
 /web/sites/all/modules/*
 /web/sites/all/themes/*
+/web/sites/all/default/*
 !/web/sites/all/modules/custom/
 !/web/sites/all/themes/custom/
 
