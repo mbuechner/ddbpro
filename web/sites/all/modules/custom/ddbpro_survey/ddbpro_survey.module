@@ -1,0 +1,125 @@
+<?php
+
+/**
+ * Implements hook_block_info().
+ * This hook declares what blocks are provided by the module.
+ */
+function ddbpro_survey_block_info() {
+	$blocks['ddbpro_survey'] = array(
+		'info' => t('Survey'),
+		'cache' => DRUPAL_CACHE_PER_ROLE
+	);
+	return $blocks;
+}
+
+/**
+ * Implements hook_block_configure().
+ * This hook declares configuration options for blocks provided by this module.
+ */
+function ddbpro_survey_block_configure($delta = '') {
+	$form = array();
+	if ($delta == 'ddbpro_survey') {
+		$form['ddbpro_survey_header'] = array(
+			'#type' => 'textfield',
+			'#title' => t('Headline'),
+			'#size' => 60,
+			'#description' => t('Header fort the survey'),
+			'#default_value' => variable_get('ddbpro_survey_header', t('Survey'))
+		);
+		$form['ddbpro_survey_text']   = array(
+			'#type' => 'text_format',
+			'#title' => t('Text'),
+			'#description' => t('Text for the survey'),
+			'#default_value' => variable_get('ddbpro_survey_text', t('<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum.</p>'))
+		);
+		$form['ddbpro_survey_link'] = array(
+			'#type' => 'textfield',
+			'#title' => t('URL'),
+			'#size' => 120,
+			'#description' => t('Link to the Survey'),
+			'#default_value' => variable_get('ddbpro_survey_link', t('https://www.example.org/'))
+		);
+		$form['ddbpro_survey_button_close'] = array(
+			'#type' => 'textfield',
+			'#title' => t('Close button'),
+			'#size' => 60,
+			'#description' => t('Text for button to close modal'),
+			'#default_value' => variable_get('ddbpro_survey_button_close', t('Close'))
+		);
+		$form['ddbpro_survey_button_participate'] = array(
+			'#type' => 'textfield',
+			'#title' => t('Participate button'),
+			'#size' => 60,
+			'#description' => t('Text for button to participate'),
+			'#default_value' => variable_get('ddbpro_survey_button_participate', t('Participate!'))
+		);
+	}
+	return $form;
+}
+
+/**
+ * Implements hook_block_save().
+ * This hook declares how the configured options for a block
+ * provided by this module are saved.
+ */
+function ddbpro_survey_block_save($delta = '', $edit = array()) {
+	if ($delta == 'ddbpro_survey') {
+		variable_set('ddbpro_survey_text', $edit['ddbpro_survey_text']['value']);
+		variable_set('ddbpro_survey_link', $edit['ddbpro_survey_link']);
+		variable_set('ddbpro_survey_header', $edit['ddbpro_survey_header']);
+		variable_set('ddbpro_survey_button_participate', $edit['ddbpro_survey_button_participate']);
+		variable_set('ddbpro_survey_button_close', $edit['ddbpro_survey_button_close']);
+	}
+}
+
+/**
+ * Implements hook_block_view().
+ * This hook generates the contents of the blocks themselves.
+ */
+function ddbpro_survey_block_view($delta = '') {
+	$block = array();
+	if ($delta == 'ddbpro_survey') {
+		$block['content'] = ddbpro_survey_contents($delta);
+	}
+	return $block;
+}
+
+/**
+ * A module-defined block content function.
+ */
+function ddbpro_survey_contents($delta) {
+	
+	$html_text   = variable_get('ddbpro_survey_text', t('No text set. Please configure block.'));
+	$html_header = variable_get('ddbpro_survey_header', array('value' => t('No header set. Please configure block.'), 'format' => NULL));
+	$html_link   = variable_get('ddbpro_survey_link', t('https://www.example.org/'));
+	
+	$html = "<!-- Modal -->\n" 
+		. "<div aria-hidden=\"true\" aria-labelledby=\"surveyModalCenterTitle\" class=\"modal fade\" id=\"surveyModalCenter\" role=\"dialog\" tabindex=\"-1\">\n" 
+		. "  <div class=\"modal-dialog modal-dialog-centered\" role=\"document\">\n" 
+		. "    <div class=\"modal-content\">\n" 
+		. "      <div class=\"modal-header\">\n" 
+		. "        <button aria-label=\"Close\" class=\"close\" data-dismiss=\"modal\" type=\"button\">\n" 
+		. "          <span aria-hidden=\"true\">×</span>\n" 
+		. "        </button>\n" 
+		. "        <h4 class=\"modal-title\">" . $html_header . "</h4>\n" 
+		. "      </div>\n" 
+		. "      <div class=\"modal-body\">" . $html_text . "</div>\n" 
+		. "      <div class=\"modal-footer\">\n" 
+		. "        <button id=\"surveyModalCenterCloseButton\" class=\"btn btn-secondary\" data-dismiss=\"modal\" type=\"button\">" . variable_get('ddbpro_survey_button_close', t('Close')) . "</button>\n" 
+		. "        <a id=\"surveyModalCenterParticipateButton\" class=\"btn btn-primary\" role=\"button\" href=\"" . $html_link . "\" target=\"_blank\">" . variable_get('ddbpro_survey_button_participate', t('Participate!')) . "</a>\n" 
+		. "      </div>\n" 
+		. "    </div>\n" 
+		. "  </div>\n" 
+		. "</div>\n";
+	
+	$result = array(
+		'#markup' => $html,
+		'#attached' => array(
+			'js' => array(
+				drupal_get_path('module', 'ddbpro_survey') . '/js/js.cookie.min.js',
+				drupal_get_path('module', 'ddbpro_survey') . '/js/ddbpro_survey.js'
+			)
+		)
+	);
+	return $result;
+}

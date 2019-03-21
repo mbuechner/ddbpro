@@ -1,0 +1,78 @@
+<?php
+
+/**
+ * @file
+ * A Facet API widget that displays facet items as tagadelic links.
+ */
+
+/**
+ * Implements hook_facetapi_widgets().
+ */
+function facetapi_ddbpro_facetapi_widgets() {
+  return array(
+    'facetapi_ddbpro' => array(
+      'handler' => array(
+        'label' => t('DDBpro links'),
+        'class' => 'FacetapiWidgetDDBpro',
+        'query types' => array('term'),
+      ),
+    ),
+  );
+}
+
+/**
+ * Implements hook_theme().
+ */
+function facetapi_ddbpro_theme() {
+  return array(
+    'facetapi_ddbpro_link_active' => array(
+      'arguments' => array('text' => NULL, 'path' => NULL, 'options' => array()),
+    ),
+    'facetapi_ddbpro_link_inactive' => array(
+      'arguments' => array('text' => NULL, 'path' => NULL, 'options' => array()),
+    ),
+  );
+}
+
+/**
+ * Themes a facet link for a value that is currently being searched.
+ */
+function theme_facetapi_ddbpro_link_active($variables) {
+  $link_text = '';
+  if (isset($variables['text'])) {
+    if (empty($variables['options']['html'])) {
+      $link_text = check_plain($variables['text']);
+    }
+    else {
+      $link_text = $variables['text'];
+    }
+  }
+  $variables['options']['html'] = TRUE;
+  $variables['options']['attributes']['class'] = 'pull-right';
+  $variables['options']['attributes']['title'] = 'Löschen';
+  $variables['text'] = '<i class="fa fa-times"></i>';
+  
+  if (isset($variables['count'])) {
+    $link_text .= '&#160;' . theme('facetapi_count', $variables);
+  }
+  
+  return '<b>' . $link_text . '</b>' . theme_link($variables);
+}
+
+function theme_facetapi_ddbpro_link_inactive($variables) {
+  $sanitize = empty($variables['options']['html']);
+  $variables['text'] = ($sanitize) ? check_plain($variables['text']) : $variables['text'];
+
+  // Adds count to link if one was passed.
+  if (isset($variables['count'])) {
+    $variables['text'] .= '&#160;' . theme('facetapi_count', $variables);
+  }
+
+  $variables['options']['html'] = TRUE;
+  
+  if(isset($variables['count']) && $variables['count'] > 0) {
+    return theme_link($variables);
+  } else {
+    return $variables['text'];
+  }
+} 
