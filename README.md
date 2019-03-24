@@ -25,7 +25,7 @@ A possible proxy configuration can also be configured here.
 ### 3. Rebuild Registry
 The pathes to all Drupal modules (might) have been changed and Drupal won't run correctly. To fix that, it's necessary to rebuild the registry. Therefor the module [Registry Rebuild](https://www.drupal.org/project/registry_rebuild) is already installed. Run:
 ```
-> cd cd web/sites/all/modules/contrib/registry_rebuild
+> cd web/sites/all/modules/contrib/registry_rebuild
 > php registry_rebuild.php
 ```
 
