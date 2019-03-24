@@ -47,11 +47,7 @@ DDBpro specific files are stored in the directory `download/` with its subdirect
 ### 6. Done
 Yeah! :-)
 
-## Build Project
-Make sure Composer is installed correctly and run the following command in project's root.
-```
-> composer update
-```
+## Build-in webserver
 For testing and developing purposes [Drush](https://www.drush.org/) does provide a webserver. Run:
 ```
 > vendor/drush/drush/drush rs
