@@ -99,7 +99,7 @@
           <div class="input-group">
             <input class="form-control" id="edit-query-header" name="query" placeholder="Suchen in DDBpro" type="text" maxlength="128" />
             <div class="input-group-btn">
-              <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+              <button class="btn btn-default" type="submit"><i class="fas fa-search"></i></button>
             </div>
           </div>
         </form>
@@ -149,7 +149,19 @@
       <?php print render($title_prefix); ?>
       <?php print render($page['header']); ?>
       <?php if (!empty($title) && (arg(0) == 'node' || arg(0) == 'user') && is_numeric(arg(1)) && !drupal_is_front_page()): ?>
-        <h1 class="page-header"><?php print $title; ?>&#160;<small><i data-container="body" data-toggle="popover" data-placement="bottom" data-html="true" data-content="&lt;input type=&quot;text&quot; class=&quot;form-control&quot; onClick=&quot;this.select();&quot; value=&quot;<?php print t($GLOBALS['base_url'] ."/". current_path()); ?>&quot;&gt;" title="Stabiler Link" class="fa fa-link permalink hidden-print"></i></small></h1>      
+        <h1 class="page-header"><?php print $title; ?>&#160;<small><i title="Stabiler Link" id="ddbpropermalink" class="fa fa-link permalink hidden-print"></i></small></h1>
+        <div id="ddbpropermalinkcontent" class="hide">
+        <form>
+          <div class="input-group">
+              <input type="text" name="permalink" id="ddbpropermalinkinput" class="form-control input-md" value="<?php print t($GLOBALS['base_url'] ."/". current_path()); ?>" placeholder="<?php print t($GLOBALS['base_url'] ."/". current_path()); ?>" id="copy-input" />
+              <span class="input-group-btn">
+                <button class="btn btn-default" type="button" id="ddbpropermalinkcopybtn">
+                  <i class="far fa-clipboard" aria-hidden="true"></i>
+                </button>
+              </span>
+            </div>
+          </form>
+        </div>
       <?php elseif (!empty($title)): ?>
         <h1 class="page-header"><?php print $title; ?></h1>
       <?php endif; ?>

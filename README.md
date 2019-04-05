@@ -19,7 +19,7 @@ A possible proxy configuration can also be configured here.
 
 ### 2. Build Project
 ```
-> composer update
+> composer install
 ```
 
 ### 3. Rebuild Registry

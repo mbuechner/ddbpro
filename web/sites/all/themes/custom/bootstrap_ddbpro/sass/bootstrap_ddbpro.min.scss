@@ -399,7 +399,8 @@ i.permalink {
 }
 
 /* Firefox bug at search field */
-.navbar-ddbsearch .input-group .input-group-btn button {
+.navbar-ddbsearch .input-group .input-group-btn button,
+#ddbpropermalinkcopybtn {
 	height: 36px !important;
 }
 
