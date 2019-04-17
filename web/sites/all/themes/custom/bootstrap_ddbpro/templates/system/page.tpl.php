@@ -115,10 +115,10 @@
           <?php print render($page['navigation']); ?>
         <?php endif; ?>
       <?php endif; ?>
-      <ul class="nav navbar-nav navbar-right">
+      <ul class="nav navbar-nav navbar-right navbar-ddblogin">
         <?php if ($user->uid > 0): ?>
           <li class="dropdown<?php if (arg(0) == 'user' && arg(1) == $user->uid):?> active-trail<?php endif;?>">
-            <span data-toggle="dropdown" class="dropdown-toggle nolink" data-target="#"><?php print $user->name; ?><span class="caret"></span></span>
+            <span data-toggle="dropdown" class="dropdown-toggle nolink"><?php print $user->name; ?><span class="caret"></span></span>
             <ul class="dropdown-menu" role="menu">
               <li<?php if (arg(0) == 'user' && arg(1) == $user->uid):?> class="active"<?php endif;?>><?php print l(t('Mein Profil'), drupal_get_path_alias('user/' . $user->uid));?></li>
               <li><?php print l(t('Abmelden'), drupal_get_path_alias('user/logout'));?></li>

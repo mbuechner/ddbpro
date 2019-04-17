@@ -87,9 +87,14 @@ h6 a {
 	color: transparent !important;
 }
 
-@media (max-width: $screen-sm-min) {
-	.navbar-tworow .navbar-collapse .navbar-right>li.text-uppercase {
+@media (max-width: $screen-md-max) {
+	.navbar .navbar-collapse .navbar-ddblogin {
 		display: none;
+	}
+	.navbar .navbar-collapse .navbar-left li span.dropdown-toggle,
+	.navbar .navbar-collapse .navbar-left li a {
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 }
 
@@ -393,7 +398,7 @@ i.permalink {
 		margin-top: 0px
 	}
 	/* Header */
-	.navbar {
+	.navb	ar {
 		margin-top: 0.5em;
 	}
 }
@@ -560,6 +565,18 @@ i.permalink {
 @media (max-width: $screen-sm-min) {	
 	.footer .sociallinks {
 		margin-top: 0.5em;
+	}
+}
+
+@media (min-width: $screen-lg-min) { 
+	.footer .sociallinks span {
+		margin-left: 0.5em;
+	}
+}
+
+@media (max-width: $screen-xs-max) {
+	.footer .sociallinks span {
+		margin-left: 0.5em;
 	}
 }
 
