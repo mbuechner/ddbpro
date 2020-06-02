@@ -15,7 +15,7 @@ jobs:
     - uses: actions/checkout@v2
     
     - name: Update Composer
-      run: composer self-update --snapshot
+      run: sudo composer self-update --snapshot
 
     - name: Validate composer.json and composer.lock
       run: composer validate
