@@ -44,7 +44,7 @@
     }, {
       "type": "package",
       "package": {
-        "name": "ddbprolib/iCalcreator",
+        "name": "ddbprolib/icalcreator",
         "version": "2.20.2",
         "type": "drupal-library",
         "dist": {
@@ -85,7 +85,7 @@
         "cweagans/composer-patches": "^1.6.5",
         "ddbprolib/ckeditor": "^4.11.3",
         "ddbprolib/fontawesome": "^5.7.2",
-        "ddbprolib/iCalcreator": "^2.20.2",
+        "ddbprolib/icalcreator": "^2.20.2",
         "drupal-composer/preserve-paths": "^0.1",
         "drupal/add_to_head": "^1.2",
         "drupal/addtocal": "^1.0",
