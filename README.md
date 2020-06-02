@@ -1,4 +1,3 @@
-![PHP Composer](https://github.com/mbuechner/ddbpro/workflows/PHP%20Composer/badge.svg)
 # DDBpro - Das Portal für Datenpartner der Deutschen Digitalen Bibliothek
 This is a [Composer](https://getcomposer.org/) project for [DDBpro](http://pro.deutsche-digitale-bibliothek.de/).
 
