@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9021e3c85365b555e03c97d83a6651d8",
+    "content-hash": "ad726076b8e35fd39a9c2f663e5728d7",
     "packages": [
         {
             "name": "ckeditor/iframedialog",

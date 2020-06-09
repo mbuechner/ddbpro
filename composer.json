@@ -99,7 +99,7 @@
         "drupal/better_exposed_filters": "^3.6",
         "drupal/block_class": "^2.4",
         "drupal/block_views": "^1.0@beta",
-        "drupal/bootstrap": "^3.23",
+        "drupal/bootstrap": "^3.26",
         "drupal/calendar": "^3.5",
         "drupal/chr": "^1.9",
         "drupal/ckeditor": "^1.18",
