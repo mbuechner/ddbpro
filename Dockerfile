@@ -4,7 +4,7 @@ RUN apk add --no-cache libpng libpng-dev libjpeg-turbo-dev libwebp-dev zlib-dev 
 RUN docker-php-ext-install gd
 COPY / /tmp/ddbpro
 WORKDIR /tmp/ddbpro
-RUN composer install --no-dev
+RUN composer install --no-dev || true && composer install --no-dev
 
 FROM php:7.4-apache
 MAINTAINER Michael Büchner <m.buechner@dnb.de>
