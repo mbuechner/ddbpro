@@ -1,10 +1,10 @@
-FROM composer:1.9 AS COMPOSER_CHAIN
+FROM composer:1 AS COMPOSER_CHAIN
 MAINTAINER Michael Büchner <m.buechner@dnb.de>
 RUN apk add --no-cache libpng libpng-dev libjpeg-turbo-dev libwebp-dev zlib-dev libxpm-dev
 RUN docker-php-ext-install gd
 COPY / /tmp/ddbpro
 WORKDIR /tmp/ddbpro
-RUN composer install --no-dev || true && composer install --no-dev
+RUN composer install --no-dev
 
 FROM php:7.4-apache
 MAINTAINER Michael Büchner <m.buechner@dnb.de>
