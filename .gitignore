@@ -23,6 +23,7 @@
 !/web/sites/all/modules/
 !/web/sites/all/themes/
 !/web/sites/default/settings.example.php
+!/web/sites/default/settings.php
 
 !/web/sites/all/modules/
 !/web/sites/all/themes/
