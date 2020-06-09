@@ -2557,23 +2557,23 @@
         },
         {
             "name": "drupal/drupal",
-            "version": "7.70.0",
+            "version": "7.71.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/drupal.git",
-                "reference": "7.70"
+                "reference": "7.71"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/drupal-7.70.zip",
-                "reference": "7.70",
-                "shasum": "ea7f0fa92532941dc2eb31c2696f399068553f5c"
+                "url": "https://ftp.drupal.org/files/projects/drupal-7.71.zip",
+                "reference": "7.71",
+                "shasum": "9c035bc3b1191ee3ca59679006d9ab305b266f46"
             },
             "type": "drupal-core",
             "extra": {
                 "drupal": {
-                    "version": "7.70",
-                    "datestamp": "1589990799",
+                    "version": "7.71",
+                    "datestamp": "1591173041",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7857,17 +7857,17 @@
         },
         {
             "name": "drupal/views_bulk_operations",
-            "version": "3.5.0",
+            "version": "3.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "7.x-3.5"
+                "reference": "7.x-3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.5.zip",
-                "reference": "7.x-3.5",
-                "shasum": "cfef0de25ec73020fe631b6c94cc0df3dec3a353"
+                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.6.zip",
+                "reference": "7.x-3.6",
+                "shasum": "b4c0c32ccbff7286f6019ec9ad1065cde4b1c0fa"
             },
             "require": {
                 "drupal/drupal": "~7.0",
@@ -7876,12 +7876,9 @@
             },
             "type": "drupal-module",
             "extra": {
-                "branch-alias": {
-                    "dev-3.x": "3.x-dev"
-                },
                 "drupal": {
-                    "version": "7.x-3.5",
-                    "datestamp": "1525821480",
+                    "version": "7.x-3.6",
+                    "datestamp": "1591196777",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8189,17 +8186,17 @@
         },
         {
             "name": "drupal/xautoload",
-            "version": "5.7.0",
+            "version": "5.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/xautoload.git",
-                "reference": "7.x-5.7"
+                "reference": "7.x-5.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/xautoload-7.x-5.7.zip",
-                "reference": "7.x-5.7",
-                "shasum": "09dc14d65eeb78c34cb6ecc0eed67f3152c4b300"
+                "url": "https://ftp.drupal.org/files/projects/xautoload-7.x-5.8.zip",
+                "reference": "7.x-5.8",
+                "shasum": "64e1cab83919e419fdd9158c5627082dad1b4cdc"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -8207,8 +8204,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-5.7",
-                    "datestamp": "1461353639",
+                    "version": "7.x-5.8",
+                    "datestamp": "1591465422",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8596,16 +8593,16 @@
         },
         {
             "name": "nikic/php-parser",
-            "version": "v4.4.0",
+            "version": "v4.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nikic/PHP-Parser.git",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120"
+                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
-                "reference": "bd43ec7152eaaab3bd8c6d0aa95ceeb1df8ee120",
+                "url": "https://api.github.com/repos/nikic/PHP-Parser/zipball/53c2753d756f5adb586dca79c2ec0e2654dd9463",
+                "reference": "53c2753d756f5adb586dca79c2ec0e2654dd9463",
                 "shasum": ""
             },
             "require": {
@@ -8644,7 +8641,7 @@
                 "parser",
                 "php"
             ],
-            "time": "2020-04-10T16:34:50+00:00"
+            "time": "2020-06-03T07:24:19+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
