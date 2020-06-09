@@ -1,6 +1,6 @@
 {
   "name": "bootstrap_ddbpro",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Bootstrap Sub-theme for the Deutsche Digitale Bibliothek",
   "homepage": "https://pro.deutsche-digitale-bibliothek.de/",
   "scripts": {
@@ -9,16 +9,16 @@
   "author": "Michael Büchner",
   "license": "Apache-2.0",
   "engines": {
-    "node": ">= 0.8.0"
+    "node": ">=0.8.0"
   },
   "devDependencies": {
-    "grunt": "^1.0.4",
-    "grunt-contrib-compass": "^1.1.1",
-    "grunt-contrib-sass": "^1.0.0",
-    "grunt-contrib-watch": "^1.1.0"
+    "grunt": ">=1.1.0",
+    "grunt-contrib-compass": ">=1.1.1",
+    "grunt-contrib-sass": ">=1.0.0",
+    "grunt-contrib-watch": ">=1.1.0"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Deutsche-Digitale-Bibliothek/ddb-cms"
+    "url": "https://github.com/mbuechner/ddbpro/tree/master/web/sites/all/themes/custom/bootstrap_ddbpro"
   }
 }
