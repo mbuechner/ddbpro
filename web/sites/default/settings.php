@@ -250,10 +250,17 @@ $databases['default']['default'] = array (
   'username' => getenv('MYSQL_USER'),
   'password' => getenv('MYSQL_PASSWORD'),
   'host' => getenv('MYSQL_HOSTNAME'),
+  'port' => getenv('MYSQL_PORT'),
   'prefix' => '',
-  'collation' => 'utf8_general_ci',
+  'charset' => 'utf8mb4',
+  'collation' => 'utf8mb4_general_ci',
 );
 
+/**
+* DDBEXTRA-322
+* If feeds_never_use_curl is set to true, it will use the function drupal_http_request to get the file 
+*/
+$conf['feeds_never_use_curl'] = true;
 /**
  * Access control for update.php script.
  *
@@ -307,7 +314,8 @@ $drupal_hash_salt = getenv('HASH_SALT');
  * for you.
  */
 # $base_url = 'http://www.example.com';  // NO trailing slash!
-
+$base_url = getenv('BASE_URL');
+$conf['https'] = TRUE;
 /**
  * PHP settings:
  *
