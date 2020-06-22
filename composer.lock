@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ad726076b8e35fd39a9c2f663e5728d7",
+    "content-hash": "b9348dcab94ecf11cfe55b2f9d411ff6",
     "packages": [
         {
             "name": "ckeditor/iframedialog",
@@ -3248,6 +3248,54 @@
             "homepage": "https://www.drupal.org/project/faq",
             "support": {
                 "source": "https://git.drupalcode.org/project/faq"
+            }
+        },
+        {
+            "name": "drupal/fast_token_browser",
+            "version": "1.5.0",
+            "source": {
+                "type": "git",
+                "url": "https://git.drupalcode.org/project/fast_token_browser.git",
+                "reference": "7.x-1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://ftp.drupal.org/files/projects/fast_token_browser-7.x-1.5.zip",
+                "reference": "7.x-1.5",
+                "shasum": "1912f7e6340b664a889a1cbe0505970ca4a096a6"
+            },
+            "require": {
+                "drupal/drupal": "~7.0",
+                "drupal/token": "*"
+            },
+            "type": "drupal-module",
+            "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
+                "drupal": {
+                    "version": "7.x-1.5",
+                    "datestamp": "1559153281",
+                    "security-coverage": {
+                        "status": "covered",
+                        "message": "Covered by Drupal's security advisory policy"
+                    }
+                }
+            },
+            "notification-url": "https://packages.drupal.org/7/downloads",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "authors": [
+                {
+                    "name": "npacker",
+                    "homepage": "https://www.drupal.org/user/3191165"
+                }
+            ],
+            "description": "A more efficient browser for the Token module.",
+            "homepage": "https://www.drupal.org/project/fast_token_browser",
+            "support": {
+                "source": "https://git.drupalcode.org/project/fast_token_browser"
             }
         },
         {
@@ -9896,5 +9944,6 @@
         "ext-pdo": "*",
         "ext-xml": "*"
     },
-    "platform-dev": []
+    "platform-dev": [],
+    "plugin-api-version": "1.1.0"
 }

@@ -121,6 +121,7 @@
         "drupal/facetapi_bonus": "^1.2",
         "drupal/facetapi_pretty_paths": "^1.4",
         "drupal/faq": "^1.1",
+        "drupal/fast_token_browser": "^1.5",
         "drupal/feeds": "^2.0@beta",
         "drupal/feeds_ex": "^1.0@beta",
         "drupal/feeds_tamper": "^1.2",
