@@ -14,7 +14,6 @@ RUN set -eux; \
 	fi; \
 	savedAptMark="$(apt-mark showmanual)"; \
 	apt-get update; \
-	apt-get install -y mariadb-client; \
 	apt-get install -y --no-install-recommends \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
@@ -76,6 +75,9 @@ RUN { \
 		echo "  CustomLog ${APACHE_LOG_DIR}/access.log combined"; \
 		echo "</VirtualHost>"; \
 	} > /etc/apache2/sites-enabled/000-default.conf
+
+# Add mysql for D7
+apt-get install -y --no-install-recommends mariadb-client;
 
 # Clean system
 RUN apt-get clean
