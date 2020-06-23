@@ -1,0 +1,46 @@
+version: '2'
+services:
+  ddbprodb:
+    image: mariadb:10
+    restart: always
+    volumes:
+      - ddbprodb:/var/lib/mysql
+    environment:
+      - MYSQL_RANDOM_ROOT_PASSWORD=yes
+      - MYSQL_PASSWORD=ddbpro
+      - MYSQL_DATABASE=XXX
+      - MYSQL_USER=ddbpro
+    command:
+      - "--character-set-server=utf8mb4"
+      - "--collation-server=utf8mb4_unicode_ci"
+    networks:
+      - traefik
+  ddbproapp:
+    image: mbuechner/ddbpro:latest
+    restart: always
+    labels:
+      - "traefik.http.routers.ddbpro.tls=true"
+      - "traefik.http.routers.ddbpro.tls.certresolver=le"
+      - "traefik.http.routers.ddbpro.rule=Host(`myddbpro.example.com`)"
+      - "traefik.http.routers.ddbpro.entrypoints=websecure"
+    environment:
+      MYSQL_HOSTNAME: "ddbprodb"
+      MYSQL_DATABASE: "ddbpro"
+      MYSQL_USER: "ddbpro"
+      MYSQL_PASSWORD: "XXX"
+      MYSQL_PORT: "3306"
+      HASH_SALT: "abcdefghijklmnopqrstuvwxyz0123456789"
+      BASE_URL: "https://myddbpro.example.com"
+      FILE_PUBLIC_PATH: "/var/www/html/web/sites/default/files/public_files"
+      FILE_PRIVATE_PATH: "/var/www/html/web/sites/default/files/private_files"
+      APACHE_LOG_DIR: "/var/www/html/web/sites/default/files/logs"
+    volumes:
+      - ddbpro:/var/www/html/web/sites/default/files
+    ports:
+      - 80
+    networks:
+      - traefik
+networks:
+  traefik:
+    external:
+      name: traefik

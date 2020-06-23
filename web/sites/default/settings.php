@@ -678,5 +678,5 @@ $conf['file_scan_ignore_directories'] = array(
 
 // Set pathes
 $conf['file_temporary_path'] = '/tmp';
-$conf['file_public_path'] = '/var/www/html/web/downloads/public';
-$conf['file_private_path'] = '/var/www/html/web/downloads/private';
+$conf['file_public_path'] = getenv('FILE_PUBLIC_PATH');
+$conf['file_private_path'] = getenv('FILE_PRIVATE_PATH');
