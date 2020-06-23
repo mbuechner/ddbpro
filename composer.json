@@ -44,7 +44,7 @@
     }, {
       "type": "package",
       "package": {
-        "name": "ddbprolib/iCalcreator",
+        "name": "ddbprolib/icalcreator",
         "version": "2.20.4",
         "type": "drupal-library",
         "dist": {
@@ -99,7 +99,7 @@
         "cweagans/composer-patches": "~1.6.5",
         "ddbprolib/ckeditor": "^4.11.3",
         "ddbprolib/fontawesome": "^5.7.2",
-        "ddbprolib/iCalcreator": "^2.20.4",
+        "ddbprolib/icalcreator": "^2.20.4",
         "ddbprolib/jsonpath": "^0.5.0",
         "drupal-composer/preserve-paths": "~0.1",
         "drupal/add_to_head": "~1.2",
@@ -110,6 +110,7 @@
         "drupal/admin_views": "~1.6",
         "drupal/advagg": "~2.33",
         "drupal/asset": "~1.0",
+        "drupal/backup_migrate": "^3.7",
         "drupal/better_exposed_filters": "~3.6",
         "drupal/block_class": "~2.4",
         "drupal/block_views": "~1.0@beta",
@@ -153,6 +154,7 @@
         "drupal/fontawesome": "~3.10",
         "drupal/globalredirect": "~1.6",
         "drupal/hreflang": "~1.4",
+        "drupal/http_proxy": "^1.0",
         "drupal/image_link_formatter": "~1.1",
         "drupal/imagecache_actions": "~1.9",
         "drupal/imagecache_token": "~1.0@RC",
@@ -255,6 +257,7 @@
             "./web/": ["type:drupal-core"],
             "./web/profiles/{$name}/": ["type:drupal-profile"],
             "./web/sites/all/drush/{$name}/": ["type:drupal-drush"],
+            "./web/sites/all/libraries/iCalcreator/": ["ddbprolib/icalcreator"],
             "./web/sites/all/libraries/{$name}/": ["type:drupal-library"],
             "./web/sites/all/libraries/ckeditor/plugins/{$name}/": ["type:ckeditor-library"],
             "./web/sites/all/modules/contrib/{$name}/": ["type:drupal-module"],
