@@ -31,8 +31,8 @@ services:
       MYSQL_PORT: "3306"
       HASH_SALT: "abcdefghijklmnopqrstuvwxyz0123456789"
       BASE_URL: "https://myddbpro.example.com"
-      FILE_PUBLIC_PATH: "/var/www/html/web/sites/default/files/public_files"
-      FILE_PRIVATE_PATH: "/var/www/html/web/sites/default/files/private_files"
+      FILE_PUBLIC_PATH: "sites/default/files/public_files"
+      FILE_PRIVATE_PATH: "sites/default/files/private_files"
       APACHE_LOG_DIR: "/var/www/html/web/sites/default/files/logs"
     volumes:
       - ddbpro:/var/www/html/web/sites/default/files
