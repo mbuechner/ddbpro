@@ -14,8 +14,8 @@ RUN set -eux; \
 	fi; \
 	savedAptMark="$(apt-mark showmanual)"; \
 	apt-get update; \
+	apt-get install -y mariadb-client; \
 	apt-get install -y --no-install-recommends \
-		mariadb-client \
 		libfreetype6-dev \
 		libjpeg62-turbo-dev \
 		libpng-dev \
