@@ -77,7 +77,7 @@ RUN { \
 	} > /etc/apache2/sites-enabled/000-default.conf
 
 # Add mysql for D7
-apt-get install -y --no-install-recommends mariadb-client;
+RUN apt-get install -y --no-install-recommends mariadb-client
 
 # Clean system
 RUN apt-get clean
