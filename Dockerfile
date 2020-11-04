@@ -69,7 +69,7 @@ RUN chown -R www-data:www-data web/sites web/modules web/themes
 RUN chmod +x /var/www/html/vendor/drush/drush/drush /var/www/html/vendor/drush/drush/drush.launcher
 RUN { \
 		echo "<VirtualHost *:80>"; \
-		echo "  ServerAdmin mbuechner@dnb.de"; \
+		echo "  ServerAdmin m.buechner@dnb.de"; \
 		echo "  DocumentRoot /var/www/html/web"; \
 		echo "  ErrorLog ${APACHE_LOG_DIR}/error.log"; \
 		echo "  CustomLog ${APACHE_LOG_DIR}/access.log combined"; \
