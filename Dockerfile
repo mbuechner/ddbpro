@@ -4,10 +4,11 @@ RUN apk add --no-cache libpng libpng-dev libjpeg-turbo-dev libwebp-dev zlib-dev 
 RUN docker-php-ext-install gd
 COPY / /tmp/ddbpro
 WORKDIR /tmp/ddbpro
-RUN ls -la web/sites/all/modules/custom/
-RUN composer install
+RUN composer install --no-dev
+# Composer 2 does delete important directories (e.g. web/sites/all/modules/custom/)
+# and drupal-composer/preserve-paths doesn't work with Composer 2.
+# This is a hacky work-a-round to restore all necessary directories:
 COPY / /tmp/ddbpro
-RUN ls -la web/sites/all/modules/custom/
 
 FROM php:7.4-apache
 MAINTAINER Michael Büchner <m.buechner@dnb.de>
@@ -64,7 +65,6 @@ RUN { \
 
 WORKDIR /var/www/html
 COPY --from=COMPOSER_CHAIN /tmp/ddbpro/ .
-RUN ls -la web/sites/all/modules/custom/
 COPY docker-php-entrypoint-drupal.sh /usr/local/bin/docker-php-entrypoint-drupal
 RUN chmod 775 /usr/local/bin/docker-php-entrypoint-drupal
 RUN find . -type d -exec chmod 755 {} \;
@@ -86,10 +86,8 @@ RUN apt-get install -y --no-install-recommends mariadb-client
 # Clean system
 RUN apt-get clean
 RUN rm -rf /var/lib/apt/lists/*
-RUN ls -la web/sites/all/modules/custom/
 
 ENTRYPOINT ["docker-php-entrypoint-drupal"]
 HEALTHCHECK --interval=1m --timeout=3s CMD curl --fail http://localhost/ || exit 1
 EXPOSE 80
 CMD ["apache2-foreground"]
-
