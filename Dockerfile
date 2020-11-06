@@ -6,6 +6,7 @@ COPY / /tmp/ddbpro
 WORKDIR /tmp/ddbpro
 RUN ls -la web/sites/all/modules/custom/
 RUN composer install
+COPY / /tmp/ddbpro
 RUN ls -la web/sites/all/modules/custom/
 
 FROM php:7.4-apache
