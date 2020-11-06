@@ -5,7 +5,7 @@ RUN docker-php-ext-install gd
 COPY / /tmp/ddbpro
 WORKDIR /tmp/ddbpro
 RUN ls -la web/sites/all/modules/custom/
-RUN composer install --no-dev
+RUN composer install
 RUN ls -la web/sites/all/modules/custom/
 
 FROM php:7.4-apache
