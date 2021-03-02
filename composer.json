@@ -101,7 +101,7 @@
         "ddbprolib/fontawesome": "^5.7.2",
         "ddbprolib/icalcreator": "^2.20.4",
         "ddbprolib/jsonpath": "^0.5.1",
-        "drupal-composer/preserve-paths": "^0.1",
+        "drupal-composer/preserve-paths": "^0.1.6",
         "drupal/composer_autoloader": "^1.0",
         "drupal/add_to_head": "~1.2",
         "drupal/addtocal": "~1.0",
@@ -267,7 +267,9 @@
             }
         },
         "preserve-paths": [
-            "web/sites"
+            "web/sites/default/settings.php",
+            "web/sites/all/modules/custom",
+            "web/sites/all/themes/custom"
         ]
     }
 }
