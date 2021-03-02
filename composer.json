@@ -205,7 +205,6 @@
         "drupal/twitter_block": "~2.3",
         "drupal/unused_modules": "~1.6",
         "drupal/userprotect": "~1.2",
-        "drupal/utf8mb4_convert": "^1.0",
         "drupal/viewfield": "~2.1",
         "drupal/views_base_url": "~1.2",
         "drupal/views_bootstrap": "~3.2",
