@@ -4,14 +4,14 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "deb2583630af9ecb7860138acdfd8869",
+    "content-hash": "1ea4788e1d085a2f00a1552fd03283da",
     "packages": [
         {
             "name": "ckeditor/iframedialog",
             "version": "4.16.0",
             "dist": {
                 "type": "zip",
-                "url": "https://download.ckeditor.com/iframedialog/releases/iframedialog_4.16.0.zip"
+                "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.16.0.zip"
             },
             "require": {
                 "composer/installers": "^1.2",
