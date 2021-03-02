@@ -73,10 +73,10 @@
       "type": "package",
       "package": {
         "name": "ckeditor/iframedialog",
-        "version": "4.11.3",
+        "version": "4.16.0",
         "type": "ckeditor-library",
         "dist": {
-          "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.11.3.zip",
+          "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.16.0.zip",
           "type": "zip"
         },
         "require": {
@@ -93,7 +93,7 @@
         "ext-openssl": "*",
         "ext-pdo": "*",
         "ext-xml": "*",
-        "ckeditor/iframedialog": "~4.11.3",
+        "ckeditor/iframedialog": "~4.16.0",
         "composer/installers": "^1.2",
         "composer/semver": "^1.4",
         "cweagans/composer-patches": "^1.6.5",
