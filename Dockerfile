@@ -119,6 +119,11 @@ RUN { \
 WORKDIR /var/www/html
 COPY --from=COMPOSER_CHAIN /tmp/ddbpro/ .
 COPY docker-php-entrypoint-drupal.sh /usr/local/bin/docker-php-entrypoint-drupal
+# composer is case-insensitive *grr*
+RUN if [ -d /var/www/html/web/sites/all/libraries/icalcreator/ ]; \
+    then mv /var/www/html/web/sites/all/libraries/icalcreator/ /var/www/html/web/sites/all/libraries/iCalcreator/; \
+    fi
+
 RUN chmod 775 /usr/local/bin/docker-php-entrypoint-drupal
 RUN find . -type d -exec chmod 755 {} \;
 RUN find . -type f -exec chmod 644 {} \;

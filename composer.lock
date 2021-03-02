@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0d8529de21993b75de65c300262a0e6",
+    "content-hash": "0aa12f5ba891aa1a4d01a60b24831795",
     "packages": [
         {
             "name": "ckeditor/iframedialog",
@@ -7182,26 +7182,26 @@
         },
         {
             "name": "drupal/token",
-            "version": "1.7.0",
+            "version": "1.8.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/token.git",
-                "reference": "7.x-1.7"
+                "reference": "7.x-1.8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/token-7.x-1.7.zip",
-                "reference": "7.x-1.7",
-                "shasum": "433827b79b944c05e38d144c9b95e5494116ff67"
+                "url": "https://ftp.drupal.org/files/projects/token-7.x-1.8.zip",
+                "reference": "7.x-1.8",
+                "shasum": "f6cace53b536870ba669081f41fef59fd28cb749"
             },
             "require": {
-                "drupal/drupal": "~7.0"
+                "drupal/drupal": "^7.23"
             },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-1.7",
-                    "datestamp": "1485316084",
+                    "version": "7.x-1.8",
+                    "datestamp": "1614719850",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -8306,52 +8306,6 @@
             "time": "2021-02-01T15:34:47+00:00"
         },
         {
-            "name": "flow/jsonpath",
-            "version": "0.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/FlowCommunications/JSONPath.git",
-                "reference": "b9738858c75d008c1211612b973e9510f8b7f8ea"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/FlowCommunications/JSONPath/zipball/b9738858c75d008c1211612b973e9510f8b7f8ea",
-                "reference": "b9738858c75d008c1211612b973e9510f8b7f8ea",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "peekmo/jsonpath": "dev-master",
-                "phpunit/phpunit": "^7.0"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-0": {
-                    "Flow\\JSONPath": "src/",
-                    "Flow\\JSONPath\\Test": "tests/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Stephen Frank",
-                    "email": "stephen@flowsa.com"
-                }
-            ],
-            "description": "JSONPath implementation for parsing, searching and flattening arrays",
-            "support": {
-                "issues": "https://github.com/FlowCommunications/JSONPath/issues",
-                "source": "https://github.com/FlowCommunications/JSONPath/tree/0.5.0"
-            },
-            "abandoned": "softcreatr/jsonpath",
-            "time": "2019-07-15T17:23:22+00:00"
-        },
-        {
             "name": "masterminds/html5",
             "version": "2.7.4",
             "source": {
@@ -8877,6 +8831,73 @@
                 "source": "https://github.com/technosophos/querypath/tree/master"
             },
             "time": "2016-08-01T22:40:30+00:00"
+        },
+        {
+            "name": "softcreatr/jsonpath",
+            "version": "0.7.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/SoftCreatR/JSONPath.git",
+                "reference": "46689608586a8081be399342755c36e179f3b5fc"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/SoftCreatR/JSONPath/zipball/46689608586a8081be399342755c36e179f3b5fc",
+                "reference": "46689608586a8081be399342755c36e179f3b5fc",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "php": ">=7.1"
+            },
+            "conflict": {
+                "phpunit/phpunit": "<7.0 || >= 10.0"
+            },
+            "replace": {
+                "flow/jsonpath": "*"
+            },
+            "require-dev": {
+                "phpunit/phpunit": ">=7.0",
+                "roave/security-advisories": "dev-master",
+                "squizlabs/php_codesniffer": "^3.5"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Flow\\JSONPath\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Frank",
+                    "email": "stephen@flowsa.com",
+                    "homepage": "https://prismaticbytes.com",
+                    "role": "Developer"
+                },
+                {
+                    "name": "Sascha Greuel",
+                    "email": "hello@1-2.dev",
+                    "homepage": "http://1-2.dev",
+                    "role": "Developer"
+                }
+            ],
+            "description": "JSONPath implementation for parsing, searching and flattening arrays",
+            "support": {
+                "email": "hello@1-2.dev",
+                "issues": "https://github.com/SoftCreatR/JSONPath/issues",
+                "source": "https://github.com/SoftCreatR/JSONPath"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/softcreatr",
+                    "type": "github"
+                }
+            ],
+            "time": "2020-10-27T11:37:08+00:00"
         },
         {
             "name": "symfony/console",
