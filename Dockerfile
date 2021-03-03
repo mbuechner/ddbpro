@@ -110,6 +110,7 @@ RUN { \
 	} > /usr/local/etc/php/conf.d/1-opcache-recommended.ini
 RUN { \
 		echo "upload_max_filesize = 128M"; \
+		echo "error_log = /dev/stderr"; \
 		echo "error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT"; \
 		echo "display_errors = Off"; \
 		echo "display_startup_errors = Off"; \
