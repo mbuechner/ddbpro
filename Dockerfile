@@ -107,9 +107,14 @@ RUN { \
 		echo "opcache.max_accelerated_files=4000"; \
 		echo "opcache.max_wasted_percentage=10"; \
 		echo "opcache.revalidate_freq=60"; \
-	} > /usr/local/etc/php/conf.d/opcache-recommended.ini
+	} > /usr/local/etc/php/conf.d/1-opcache-recommended.ini
 RUN { \
 		echo "upload_max_filesize = 128M"; \
+		echo "error_reporting = E_ALL & ~E_DEPRECATED & ~E_STRICT"; \
+		echo "display_errors = Off"; \
+		echo "display_startup_errors = Off"; \
+		echo "html_errors = On"; \
+		echo "log_errors = On"; \
 		echo "post_max_size = 128M"; \
 		echo "memory_limit = 512M"; \
 		echo "max_execution_time = 600"; \
