@@ -123,3 +123,13 @@ function ddbpro_survey_contents($delta) {
 	);
 	return $result;
 }
+
+/**
+ * Disbale Drupal's module updates
+ *
+ * @param $projects
+ */
+function ddbpro_survey_update_projects_alter(&$projects)
+{
+  unset($projects['ddbpro_survey']);
+}

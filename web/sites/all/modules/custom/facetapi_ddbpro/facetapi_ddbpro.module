@@ -76,3 +76,13 @@ function theme_facetapi_ddbpro_link_inactive($variables) {
     return $variables['text'];
   }
 } 
+
+/**
+ * Disbale Drupal's module updates
+ *
+ * @param $projects
+ */
+function facetapi_ddbpro_update_projects_alter(&$projects)
+{
+  unset($projects['ddbpro_survey']);
+}

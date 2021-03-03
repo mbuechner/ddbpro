@@ -8,3 +8,13 @@ function feeds_tamper_ddbproglossaryimport_ctools_plugin_directory($module, $plu
     return 'plugins';
   }
 }
+
+/**
+ * Disbale Drupal's module updates
+ *
+ * @param $projects
+ */
+function feeds_tamper_ddbproglossaryimport_update_projects_alter(&$projects)
+{
+  unset($projects['ddbpro_survey']);
+}
