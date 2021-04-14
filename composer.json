@@ -111,7 +111,7 @@
         "ddbprockeditor/ckfinder": "^3.5.1.2",
         "composer/installers": "^1.10",
         "composer/semver": "^1.4",
-        "cweagans/composer-patches": "^1.6.5",
+        "cweagans/composer-patches": "^1.7",
         "ddbprolib/ckeditor": "^4.11.3",
         "ddbprolib/fontawesome": "^5.15.3",
         "ddbprolib/icalcreator": "^2.20.4",
@@ -284,6 +284,12 @@
             "web/sites/default/settings.php",
             "web/sites/all/modules/custom",
             "web/sites/all/themes/custom"
-        ]
+        ],
+        "composer-exit-on-patch-failure": true,
+        "patches": {
+            "ddbprockeditor/ckfinder": {
+                "Add CKFinder to CKEditor, https://www.drupal.org/project/ckeditor/issues/2519308": "patches/ckfinder-config.patch"
+            }
+        }
     }
 }
