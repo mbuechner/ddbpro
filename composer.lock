@@ -4,21 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "05f28b88e4b0a5f5bae32b1720b5fb85",
+    "content-hash": "8aceb7ae67fadd95bf51ec1d955cfde8",
     "packages": [
-        {
-            "name": "ckeditor/iframedialog",
-            "version": "4.16.0",
-            "dist": {
-                "type": "zip",
-                "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.16.0.zip"
-            },
-            "require": {
-                "composer/installers": "^1.2",
-                "oomphinc/composer-installers-extender": "^2.0.0"
-            },
-            "type": "ckeditor-library"
-        },
         {
             "name": "composer/installers",
             "version": "v1.10.0",
@@ -521,6 +508,27 @@
             "time": "2020-09-30T17:56:20+00:00"
         },
         {
+            "name": "ddbprockeditor/ckfinder",
+            "version": "3.5.1.2",
+            "dist": {
+                "type": "zip",
+                "url": "https://download.cksource.com/CKFinder/CKFinder%20for%20PHP/3.5.1.2/ckfinder_php_3.5.1.2.zip"
+            },
+            "type": "ckeditor-plugin"
+        },
+        {
+            "name": "ddbprockeditor/iframedialog",
+            "version": "4.16.0",
+            "dist": {
+                "type": "zip",
+                "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.16.0.zip"
+            },
+            "require": {
+                "composer/installers": "^1.10"
+            },
+            "type": "ckeditor-plugin"
+        },
+        {
             "name": "ddbprolib/ckeditor",
             "version": "4.11.3",
             "dist": {
@@ -534,10 +542,10 @@
         },
         {
             "name": "ddbprolib/fontawesome",
-            "version": "5.7.2",
+            "version": "5.15.3",
             "dist": {
                 "type": "zip",
-                "url": "https://use.fontawesome.com/releases/v5.7.2/fontawesome-free-5.7.2-web.zip"
+                "url": "https://use.fontawesome.com/releases/v5.15.3/fontawesome-free-5.15.3-web.zip"
             },
             "require": {
                 "composer/installers": "^1.2"
@@ -552,7 +560,7 @@
                 "url": "https://github.com/lkmorlan/iCalcreator/archive/v2.20.4.zip"
             },
             "require": {
-                "composer/installers": "^1.2"
+                "composer/installers": "^1.10"
             },
             "type": "drupal-library"
         },
@@ -564,7 +572,7 @@
                 "url": "https://github.com/SoftCreatR/JSONPath/archive/0.5.1.zip"
             },
             "require": {
-                "composer/installers": "^1.2"
+                "composer/installers": "^1.10"
             },
             "type": "drupal-library"
         },
@@ -4818,82 +4826,6 @@
             }
         },
         {
-            "name": "drupal/ldap",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ldap.git",
-                "reference": "7.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ldap-7.x-2.6.zip",
-                "reference": "7.x-2.6",
-                "shasum": "6a9f316653180d9d2f34f8342c6493be23c222a9"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "require-dev": {
-                "drupal/ctools": "*",
-                "drupal/entity": "*",
-                "drupal/feeds": "*",
-                "drupal/ldap_authorization": "*",
-                "drupal/ldap_query": "*",
-                "drupal/ldap_servers": "*",
-                "drupal/ldap_sso-ldap_sso": "*",
-                "drupal/ldap_test": "*",
-                "drupal/ldap_user": "*",
-                "drupal/og": "*",
-                "drupal/views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-2.6",
-                    "datestamp": "1617049656",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "dgtlmoon",
-                    "homepage": "https://www.drupal.org/user/25027"
-                },
-                {
-                    "name": "grahl",
-                    "homepage": "https://www.drupal.org/user/146040"
-                },
-                {
-                    "name": "johnbarclay",
-                    "homepage": "https://www.drupal.org/user/225037"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
-                },
-                {
-                    "name": "queenvictoria",
-                    "homepage": "https://www.drupal.org/user/856454"
-                },
-                {
-                    "name": "welly",
-                    "homepage": "https://www.drupal.org/user/354705"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/ldap",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ldap"
-            }
-        },
-        {
             "name": "drupal/libraries",
             "version": "2.5.0",
             "source": {
@@ -6041,61 +5973,6 @@
             "homepage": "https://www.drupal.org/project/redirect_file",
             "support": {
                 "source": "https://git.drupalcode.org/project/redirect_file"
-            }
-        },
-        {
-            "name": "drupal/registry_rebuild",
-            "version": "2.5.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/registry_rebuild.git",
-                "reference": "7.x-2.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/registry_rebuild-7.x-2.5.zip",
-                "reference": "7.x-2.5",
-                "shasum": "8cccb33d1af5e5727c68cad7fbd53f629d5ab4a1"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-2.5",
-                    "datestamp": "1485986284",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "memtkmcc",
-                    "homepage": "https://www.drupal.org/user/92646"
-                },
-                {
-                    "name": "omega8cc",
-                    "homepage": "https://www.drupal.org/user/539502"
-                },
-                {
-                    "name": "q0rban",
-                    "homepage": "https://www.drupal.org/user/31022"
-                },
-                {
-                    "name": "rfay",
-                    "homepage": "https://www.drupal.org/user/30906"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/registry_rebuild",
-            "support": {
-                "source": "https://git.drupalcode.org/project/registry_rebuild"
             }
         },
         {

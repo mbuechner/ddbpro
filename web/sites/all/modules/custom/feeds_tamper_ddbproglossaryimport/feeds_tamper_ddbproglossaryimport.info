@@ -1,6 +1,0 @@
-name = Feeds Tamper Glossary Import Plug-in
-description = Feeds Tamper plug-in to import a glossary from xTree, developed by Deutsche Digitale Bibliothek.
-core = 7.x
-package = DDBpro
-version = 7.x-1.0
-project = feeds_tamper_ddbproglossaryimport

@@ -1,8 +1,0 @@
-name = DDBpro Facets
-description = A Facet API widget that displays facet items in DDBpro style.
-core = 7.x
-package = DDBpro
-version = 7.x-1.0
-project = facetapi_ddbpro
-dependencies[] = facetapi
-files[] = plugins/facetapi/widget_ddbpro.inc

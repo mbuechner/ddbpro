@@ -1,5 +1,0 @@
-name = DDBpro Survey
-description = "Adds a block where you con configure a survey modal (requires Boostrap theme)."
-core = 7.x
-package = DDBpro
-files[] = ddbpro_survey.module
