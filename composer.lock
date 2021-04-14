@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "284307ffcd0d6b3fd1e5ad8d30e878d2",
+    "content-hash": "63e77b3c9e5717f81aad5dd6e5292e25",
     "packages": [
         {
             "name": "composer/installers",
@@ -4823,82 +4823,6 @@
             "homepage": "https://www.drupal.org/project/l10n_update",
             "support": {
                 "source": "https://git.drupalcode.org/project/l10n_update"
-            }
-        },
-        {
-            "name": "drupal/ldap",
-            "version": "2.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/ldap.git",
-                "reference": "7.x-2.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ldap-7.x-2.6.zip",
-                "reference": "7.x-2.6",
-                "shasum": "6a9f316653180d9d2f34f8342c6493be23c222a9"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "require-dev": {
-                "drupal/ctools": "*",
-                "drupal/entity": "*",
-                "drupal/feeds": "*",
-                "drupal/ldap_authorization": "*",
-                "drupal/ldap_query": "*",
-                "drupal/ldap_servers": "*",
-                "drupal/ldap_sso-ldap_sso": "*",
-                "drupal/ldap_test": "*",
-                "drupal/ldap_user": "*",
-                "drupal/og": "*",
-                "drupal/views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-2.6",
-                    "datestamp": "1617049656",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "dgtlmoon",
-                    "homepage": "https://www.drupal.org/user/25027"
-                },
-                {
-                    "name": "grahl",
-                    "homepage": "https://www.drupal.org/user/146040"
-                },
-                {
-                    "name": "johnbarclay",
-                    "homepage": "https://www.drupal.org/user/225037"
-                },
-                {
-                    "name": "larowlan",
-                    "homepage": "https://www.drupal.org/user/395439"
-                },
-                {
-                    "name": "queenvictoria",
-                    "homepage": "https://www.drupal.org/user/856454"
-                },
-                {
-                    "name": "welly",
-                    "homepage": "https://www.drupal.org/user/354705"
-                }
-            ],
-            "homepage": "https://www.drupal.org/project/ldap",
-            "support": {
-                "source": "https://git.drupalcode.org/project/ldap"
             }
         },
         {

@@ -81,6 +81,7 @@ RUN set -eux; \
 		--with-freetype \
 		--with-jpeg; \
 	docker-php-ext-install -j "$(nproc)" \
+		exif \
 		gd \
 		opcache \
 		pdo_mysql \
