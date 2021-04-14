@@ -169,7 +169,6 @@
         "drupal/fontawesome": "~3.10",
         "drupal/globalredirect": "~1.6",
         "drupal/hreflang": "~1.4",
-        "drupal/http_proxy": "^1.0",
         "drupal/image_link_formatter": "~1.1",
         "drupal/imagecache_actions": "~1.9",
         "drupal/imagecache_token": "~1.0@RC",
