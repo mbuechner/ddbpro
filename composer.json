@@ -107,7 +107,6 @@
         "ext-openssl": "*",
         "ext-pdo": "*",
         "ext-xml": "*",
-        "ext-exif": "*",
         "composer/installers": "^1.10",
         "composer/semver": "^1.4",
         "cweagans/composer-patches": "^1.7",
