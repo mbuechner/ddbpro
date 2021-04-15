@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e6b1db789224da545ebfe444fe6b17fd",
+    "content-hash": "b48410603301898cdd3ba03f94db4862",
     "packages": [
         {
             "name": "composer/installers",
@@ -816,58 +816,6 @@
             }
         },
         {
-            "name": "drupal/admin_language",
-            "version": "1.0.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/admin_language.git",
-                "reference": "7.x-1.0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_language-7.x-1.0.zip",
-                "reference": "7.x-1.0",
-                "shasum": "693d5b9f537e0c9cfb7b70c3e57c1e9fc8ef397d"
-            },
-            "require": {
-                "drupal/drupal": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-1.0",
-                    "datestamp": "1569594484",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Liam Morland",
-                    "homepage": "https://www.drupal.org/user/493050"
-                },
-                {
-                    "name": "stefan.r",
-                    "homepage": "https://www.drupal.org/user/551886"
-                },
-                {
-                    "name": "wulff",
-                    "homepage": "https://www.drupal.org/user/7118"
-                }
-            ],
-            "description": "Makes sure all administration pages are displayed in the preferred language of the administrator.",
-            "homepage": "https://www.drupal.org/project/admin_language",
-            "support": {
-                "source": "https://git.drupalcode.org/project/admin_language"
-            }
-        },
-        {
             "name": "drupal/admin_menu",
             "version": "3.0.0-rc6",
             "source": {
@@ -929,104 +877,6 @@
             "homepage": "https://www.drupal.org/project/admin_menu",
             "support": {
                 "source": "https://git.drupalcode.org/project/admin_menu"
-            }
-        },
-        {
-            "name": "drupal/admin_theme",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/admin_theme.git",
-                "reference": "7.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_theme-7.x-1.1.zip",
-                "reference": "7.x-1.1",
-                "shasum": "42122ab2efaa9d830684bbb96fa06f49078081da"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-1.1",
-                    "datestamp": "1579273087",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "geek-merlin",
-                    "homepage": "https://www.drupal.org/user/229048"
-                },
-                {
-                    "name": "justy",
-                    "homepage": "https://www.drupal.org/user/115811"
-                }
-            ],
-            "description": "Enable the administration theme on more pages than possible with Drupal's default administration page.",
-            "homepage": "https://www.drupal.org/project/admin_theme",
-            "support": {
-                "source": "https://git.drupalcode.org/project/admin_theme"
-            }
-        },
-        {
-            "name": "drupal/admin_views",
-            "version": "1.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/admin_views.git",
-                "reference": "7.x-1.7"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/admin_views-7.x-1.7.zip",
-                "reference": "7.x-1.7",
-                "shasum": "26db1aa6e7a6888b33d17800df1b6d45c19e0b16"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/views": "*",
-                "drupal/views_bulk_operations": "^3.2"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-1.7",
-                    "datestamp": "1574192284",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "DamienMcKenna",
-                    "homepage": "https://www.drupal.org/user/108450"
-                },
-                {
-                    "name": "vijaycs85",
-                    "homepage": "https://www.drupal.org/user/93488"
-                }
-            ],
-            "description": "Replaces all system object management pages in Drupal core with real views.",
-            "homepage": "https://www.drupal.org/project/admin_views",
-            "support": {
-                "source": "https://git.drupalcode.org/project/admin_views"
             }
         },
         {
@@ -1268,55 +1118,6 @@
             "homepage": "https://www.drupal.org/project/block_class",
             "support": {
                 "source": "https://git.drupalcode.org/project/block_class"
-            }
-        },
-        {
-            "name": "drupal/block_views",
-            "version": "1.0.0-beta2",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/block_views.git",
-                "reference": "7.x-1.0-beta2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/block_views-7.x-1.0-beta2.zip",
-                "reference": "7.x-1.0-beta2",
-                "shasum": "63d23d0e8e86b74b16a2b529e57c417519aad5b0"
-            },
-            "require": {
-                "drupal/drupal": "*",
-                "drupal/views": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-1.0-beta2",
-                    "datestamp": "1330880437",
-                    "security-coverage": {
-                        "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "TomDude48",
-                    "homepage": "https://www.drupal.org/user/258411"
-                },
-                {
-                    "name": "kyletaylored",
-                    "homepage": "https://www.drupal.org/user/2207088"
-                }
-            ],
-            "description": "Example module to demonstrate module block_views.",
-            "homepage": "https://www.drupal.org/project/block_views",
-            "support": {
-                "source": "https://git.drupalcode.org/project/block_views"
             }
         },
         {
@@ -3173,58 +2974,6 @@
             }
         },
         {
-            "name": "drupal/field_formatter_settings",
-            "version": "1.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/field_formatter_settings.git",
-                "reference": "7.x-1.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/field_formatter_settings-7.x-1.1.zip",
-                "reference": "7.x-1.1",
-                "shasum": "0ab5caeb648e1851775cfa7a4a02a9094609a9e1"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-1.1",
-                    "datestamp": "1378741903",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Dave Reid",
-                    "homepage": "https://www.drupal.org/user/53892"
-                },
-                {
-                    "name": "becw",
-                    "homepage": "https://www.drupal.org/user/81067"
-                },
-                {
-                    "name": "mfer",
-                    "homepage": "https://www.drupal.org/user/25701"
-                }
-            ],
-            "description": "Provides missing alter hooks for field formatter settings and summaries",
-            "homepage": "https://www.drupal.org/project/field_formatter_settings",
-            "support": {
-                "source": "https://git.drupalcode.org/project/field_formatter_settings"
-            }
-        },
-        {
             "name": "drupal/field_group",
             "version": "1.6.0",
             "source": {
@@ -4980,54 +4729,6 @@
             }
         },
         {
-            "name": "drupal/rename_admin_paths",
-            "version": "2.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/rename_admin_paths.git",
-                "reference": "7.x-2.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/rename_admin_paths-7.x-2.3.zip",
-                "reference": "7.x-2.3",
-                "shasum": "a0cf9ecec8bc72abb81926fc9bb0778d98cee97b"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-2.3",
-                    "datestamp": "1479225192",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Raphael Apard",
-                    "homepage": "https://www.drupal.org/user/410831"
-                },
-                {
-                    "name": "slootjes",
-                    "homepage": "https://www.drupal.org/user/3516667"
-                }
-            ],
-            "description": "Rename admin path /admin/.. and /user/.. to /something/..",
-            "homepage": "https://www.drupal.org/project/rename_admin_paths",
-            "support": {
-                "source": "https://git.drupalcode.org/project/rename_admin_paths"
-            }
-        },
-        {
             "name": "drupal/revisioning",
             "version": "1.9.0",
             "source": {
@@ -6259,68 +5960,6 @@
             "homepage": "https://www.drupal.org/project/views_bootstrap",
             "support": {
                 "source": "https://git.drupalcode.org/project/views_bootstrap"
-            }
-        },
-        {
-            "name": "drupal/views_bulk_operations",
-            "version": "3.6.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/views_bulk_operations.git",
-                "reference": "7.x-3.6"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/views_bulk_operations-7.x-3.6.zip",
-                "reference": "7.x-3.6",
-                "shasum": "b4c0c32ccbff7286f6019ec9ad1065cde4b1c0fa"
-            },
-            "require": {
-                "drupal/drupal": "~7.0",
-                "drupal/entity": "*",
-                "drupal/views": "^3.12"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-3.6",
-                    "datestamp": "1591196777",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "Graber",
-                    "homepage": "https://www.drupal.org/user/1599440"
-                },
-                {
-                    "name": "Jon Pugh",
-                    "homepage": "https://www.drupal.org/user/17028"
-                },
-                {
-                    "name": "bojanz",
-                    "homepage": "https://www.drupal.org/user/86106"
-                },
-                {
-                    "name": "infojunkie",
-                    "homepage": "https://www.drupal.org/user/48424"
-                },
-                {
-                    "name": "joelpittet",
-                    "homepage": "https://www.drupal.org/user/160302"
-                }
-            ],
-            "description": "Provides a way of selecting multiple rows and applying operations to them.",
-            "homepage": "https://www.drupal.org/project/views_bulk_operations",
-            "support": {
-                "source": "https://git.drupalcode.org/project/views_bulk_operations"
             }
         },
         {
@@ -8376,7 +8015,6 @@
     "minimum-stability": "dev",
     "stability-flags": {
         "drupal/admin_menu": 5,
-        "drupal/block_views": 10,
         "drupal/custom_breadcrumbs": 10,
         "drupal/feeds": 10,
         "drupal/feeds_ex": 10,
