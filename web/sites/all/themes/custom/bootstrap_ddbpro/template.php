@@ -54,7 +54,7 @@ function bootstrap_ddbpro_views_pre_render(&$view) {
         if(empty($view->build_info['title'])) {
           $view->build_info['title'] = $view->display['default']->display_options['title'];
         }
-        $view->build_info['title'] .= " <small>(" . implode($terms_title, ', ') . ")</small>";
+        $view->build_info['title'] .= " <small>(" . implode(', ', $terms_title) . ")</small>";
       }
     }
   }
