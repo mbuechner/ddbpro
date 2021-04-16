@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "78cff74dc3c1fd20444978d728492ae5",
+    "content-hash": "1c75ea94b64d05fbfc4bb5d8ec3459b1",
     "packages": [
         {
             "name": "composer/installers",
@@ -5715,59 +5715,6 @@
             "homepage": "https://www.drupal.org/project/unused_modules",
             "support": {
                 "source": "https://git.drupalcode.org/project/unused_modules"
-            }
-        },
-        {
-            "name": "drupal/userprotect",
-            "version": "1.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://git.drupalcode.org/project/userprotect.git",
-                "reference": "7.x-1.3"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/userprotect-7.x-1.3.zip",
-                "reference": "7.x-1.3",
-                "shasum": "c8f8a8166af97aa8979dc12d0c9cbd5ff4e17309"
-            },
-            "require": {
-                "drupal/drupal": "~7.0"
-            },
-            "require-dev": {
-                "drupal/entity": "*",
-                "drupal/views": "*",
-                "drupal/views_bulk_operations": "*"
-            },
-            "type": "drupal-module",
-            "extra": {
-                "drupal": {
-                    "version": "7.x-1.3",
-                    "datestamp": "1592813091",
-                    "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
-                    }
-                }
-            },
-            "notification-url": "https://packages.drupal.org/7/downloads",
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "authors": [
-                {
-                    "name": "MegaChriz",
-                    "homepage": "https://www.drupal.org/user/654114"
-                },
-                {
-                    "name": "karschsp",
-                    "homepage": "https://www.drupal.org/user/138216"
-                }
-            ],
-            "description": "Allows admins to protect users from being edited or cancelled, on a per-user basis.",
-            "homepage": "https://www.drupal.org/project/userprotect",
-            "support": {
-                "source": "https://git.drupalcode.org/project/userprotect"
             }
         },
         {
