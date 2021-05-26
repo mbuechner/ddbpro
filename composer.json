@@ -161,6 +161,7 @@
         "drupal/jquery_update": "~2.7",
         "drupal/l10n_update": "~2.2",
         "drupal/link": "~1.6",
+        "drupal/linkchecker": "^1.4",
         "drupal/linkit": "~3.5",
         "drupal/matomo": "~2.12",
         "drupal/menu_attributes": "~1.0",
