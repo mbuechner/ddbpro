@@ -31,10 +31,10 @@
       "type": "package",
       "package": {
         "name": "ddbprolib/ckeditor",
-        "version": "4.11.3",
+        "version": "4.16.1",
         "type": "drupal-library",
         "dist": {
-          "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.11.3/ckeditor_4.11.3_full.zip",
+          "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.16.1/ckeditor_4.16.1_full.zip",
           "type": "zip"
         },
         "require": {
@@ -59,10 +59,10 @@
       "type": "package",
       "package": {
         "name": "ddbprolib/jsonpath",
-        "version": "0.5.1",
+        "version": "0.7.4",
         "type": "drupal-library",
         "dist": {
-          "url": "https://github.com/SoftCreatR/JSONPath/archive/0.5.1.zip",
+          "url": "https://github.com/SoftCreatR/JSONPath/archive/0.7.4.zip",
           "type": "zip"
         },
         "require": {
@@ -73,10 +73,10 @@
       "type": "package",
       "package": {
         "name": "ddbprockeditor/iframedialog",
-        "version": "4.16.0",
+        "version": "4.16.1",
         "type": "ckeditor-plugin",
         "dist": {
-          "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.16.0.zip",
+          "url": "https://ckeditor.com/cke4/sites/default/files/iframedialog/releases/iframedialog_4.16.1.zip",
           "type": "zip"
         },
         "require": {
@@ -111,11 +111,11 @@
         "composer/semver": "^1.4",
         "cweagans/composer-patches": "^1.7",
         "ddbprockeditor/ckfinder": "^3.5.1.2",
-        "ddbprockeditor/iframedialog": "^4.16.0",
-        "ddbprolib/ckeditor": "^4.11.3",
+        "ddbprockeditor/iframedialog": "^4.16.1",
+        "ddbprolib/ckeditor": "^4.16.1",
         "ddbprolib/fontawesome": "^5.15.3",
         "ddbprolib/icalcreator": "^2.20.4",
-        "ddbprolib/jsonpath": "^0.5.1",
+        "ddbprolib/jsonpath": "^0.7.4",
         "drupal-composer/preserve-paths": "^0.1.6",
         "drupal/add_to_head": "~1.2",
         "drupal/addtocal": "~1.0",
