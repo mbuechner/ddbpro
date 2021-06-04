@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "9567dcc9d8778ecef5278392d53c52db",
+    "content-hash": "59ab1fde2fcc1a743b0ea05c6ec0e805",
     "packages": [
         {
             "name": "composer/installers",
@@ -2652,29 +2652,26 @@
         },
         {
             "name": "drupal/faq",
-            "version": "1.2.0",
+            "version": "dev-1.x",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/faq.git",
-                "reference": "7.x-1.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/faq-7.x-1.2.zip",
-                "reference": "7.x-1.2",
-                "shasum": "17031ba0afb747a4f61beb544f0a6b83a0c991a9"
+                "reference": "7c8b6cc02d09582e5d8ece224976f7b6c09c1dd6"
             },
             "require": {
                 "drupal/drupal": "~7.0"
             },
             "type": "drupal-module",
             "extra": {
+                "branch-alias": {
+                    "dev-1.x": "1.x-dev"
+                },
                 "drupal": {
-                    "version": "7.x-1.2",
-                    "datestamp": "1574706309",
+                    "version": "7.x-1.1+9-dev",
+                    "datestamp": "1574705580",
                     "security-coverage": {
-                        "status": "covered",
-                        "message": "Covered by Drupal's security advisory policy"
+                        "status": "not-covered",
+                        "message": "Dev releases are not covered by Drupal security advisories."
                     }
                 }
             },
