@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "59ab1fde2fcc1a743b0ea05c6ec0e805",
+    "content-hash": "59daefe01ea514111357bba918548226",
     "packages": [
         {
             "name": "composer/installers",
@@ -532,10 +532,10 @@
         },
         {
             "name": "ddbprolib/ckeditor",
-            "version": "4.16.1",
+            "version": "4.16.2",
             "dist": {
                 "type": "zip",
-                "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.16.1/ckeditor_4.16.1_full.zip"
+                "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.16.2/ckeditor_4.16.2_full.zip"
             },
             "require": {
                 "composer/installers": "^1.2"
@@ -1245,17 +1245,17 @@
         },
         {
             "name": "drupal/ckeditor",
-            "version": "1.19.0",
+            "version": "1.21.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/ckeditor.git",
-                "reference": "7.x-1.19"
+                "reference": "7.x-1.21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/ckeditor-7.x-1.19.zip",
-                "reference": "7.x-1.19",
-                "shasum": "0367a7d8a8016b8e9adbd47b15d65a71532d76e1"
+                "url": "https://ftp.drupal.org/files/projects/ckeditor-7.x-1.21.zip",
+                "reference": "7.x-1.21",
+                "shasum": "98c77e4f84aa980f402e9fceddd91d46bec0ede1"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -1263,8 +1263,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-1.19",
-                    "datestamp": "1584561413",
+                    "version": "7.x-1.21",
+                    "datestamp": "1630321192",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -2450,17 +2450,17 @@
         },
         {
             "name": "drupal/facetapi",
-            "version": "1.6.0",
+            "version": "1.9.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/facetapi.git",
-                "reference": "7.x-1.6"
+                "reference": "7.x-1.9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/facetapi-7.x-1.6.zip",
-                "reference": "7.x-1.6",
-                "shasum": "23314e7a8e5ebb5c54c1b7d856a95c1a0d304b0b"
+                "url": "https://ftp.drupal.org/files/projects/facetapi-7.x-1.9.zip",
+                "reference": "7.x-1.9",
+                "shasum": "9fa24b8e181610cd8ad7fbd545fa22c4f93abb93"
             },
             "require": {
                 "drupal/ctools": "*",
@@ -2469,8 +2469,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-1.6",
-                    "datestamp": "1568910361",
+                    "version": "7.x-1.9",
+                    "datestamp": "1630088971",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4417,7 +4417,7 @@
             "extra": {
                 "drupal": {
                     "version": "7.x-1.28",
-                    "datestamp": "1626115937",
+                    "datestamp": "1626969845",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"

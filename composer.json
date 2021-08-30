@@ -31,10 +31,10 @@
       "type": "package",
       "package": {
         "name": "ddbprolib/ckeditor",
-        "version": "4.16.1",
+        "version": "4.16.2",
         "type": "drupal-library",
         "dist": {
-          "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.16.1/ckeditor_4.16.1_full.zip",
+          "url": "https://download.cksource.com/CKEditor/CKEditor/CKEditor%204.16.2/ckeditor_4.16.2_full.zip",
           "type": "zip"
         },
         "require": {
@@ -112,7 +112,7 @@
         "cweagans/composer-patches": "^1.7",
         "ddbprockeditor/ckfinder": "^3.5.1.2",
         "ddbprockeditor/iframedialog": "^4.16.1",
-        "ddbprolib/ckeditor": "^4.16.1",
+        "ddbprolib/ckeditor": "^4.16.2",
         "ddbprolib/fontawesome": "^5.15.3",
         "ddbprolib/icalcreator": "^2.20.4",
         "ddbprolib/jsonpath": "^0.7.4",
