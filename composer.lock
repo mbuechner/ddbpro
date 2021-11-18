@@ -1234,6 +1234,10 @@
                     "homepage": "https://www.drupal.org/user/160302"
                 },
                 {
+                    "name": "paulocs",
+                    "homepage": "https://www.drupal.org/user/3640109"
+                },
+                {
                     "name": "solide-echt",
                     "homepage": "https://www.drupal.org/user/46176"
                 }
@@ -1567,7 +1571,7 @@
                     "datestamp": "1410379271",
                     "security-coverage": {
                         "status": "not-covered",
-                        "message": "Project has not opted into security advisory coverage!"
+                        "message": "Beta releases are not covered by Drupal security advisories."
                     }
                 }
             },
@@ -2397,6 +2401,10 @@
                 {
                     "name": "Neslee Canil Pinto",
                     "homepage": "https://www.drupal.org/user/3580850"
+                },
+                {
+                    "name": "ivnish",
+                    "homepage": "https://www.drupal.org/user/3547706"
                 },
                 {
                     "name": "svenryen",
@@ -3870,17 +3878,17 @@
         },
         {
             "name": "drupal/l10n_update",
-            "version": "2.5.0",
+            "version": "2.6.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/l10n_update.git",
-                "reference": "7.x-2.5"
+                "reference": "7.x-2.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/l10n_update-7.x-2.5.zip",
-                "reference": "7.x-2.5",
-                "shasum": "9daf5e214deec372916285c85abcd67a7f556e86"
+                "url": "https://ftp.drupal.org/files/projects/l10n_update-7.x-2.6.zip",
+                "reference": "7.x-2.6",
+                "shasum": "351a8f0c499a55f23a2c5828bbf08494b240a312"
             },
             "require": {
                 "drupal/drupal": "*"
@@ -3888,8 +3896,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-2.5",
-                    "datestamp": "1635847704",
+                    "version": "7.x-2.6",
+                    "datestamp": "1636294701",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4207,8 +4215,12 @@
             ],
             "authors": [
                 {
-                    "name": "C_Logemann",
+                    "name": "C-Logemann",
                     "homepage": "https://www.drupal.org/user/218368"
+                },
+                {
+                    "name": "Grimreaper",
+                    "homepage": "https://www.drupal.org/user/2388214"
                 },
                 {
                     "name": "hass",
@@ -4321,6 +4333,10 @@
                 {
                     "name": "JohnAlbin",
                     "homepage": "https://www.drupal.org/user/32095"
+                },
+                {
+                    "name": "RenatoG",
+                    "homepage": "https://www.drupal.org/user/3326031"
                 },
                 {
                     "name": "joelpittet",
@@ -5430,16 +5446,16 @@
                     "homepage": "https://www.drupal.org/user/5546"
                 },
                 {
+                    "name": "iammeenugupta96",
+                    "homepage": "https://www.drupal.org/user/265769"
+                },
+                {
                     "name": "id.medion",
                     "homepage": "https://www.drupal.org/user/2542592"
                 },
                 {
                     "name": "john.oltman",
                     "homepage": "https://www.drupal.org/user/699926"
-                },
-                {
-                    "name": "meenugupta",
-                    "homepage": "https://www.drupal.org/user/265769"
                 },
                 {
                     "name": "paulocs",
@@ -5601,7 +5617,7 @@
             "extra": {
                 "drupal": {
                     "version": "7.x-1.8",
-                    "datestamp": "1614719850",
+                    "datestamp": "1614719906",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -5875,7 +5891,7 @@
             "extra": {
                 "drupal": {
                     "version": "7.x-3.25",
-                    "datestamp": "1631208786",
+                    "datestamp": "1631664489",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6660,20 +6676,20 @@
         },
         {
             "name": "psr/container",
-            "version": "1.1.1",
+            "version": "1.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/container.git",
-                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf"
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/container/zipball/8622567409010282b7aeebe4bb841fe98b58dcaf",
-                "reference": "8622567409010282b7aeebe4bb841fe98b58dcaf",
+                "url": "https://api.github.com/repos/php-fig/container/zipball/513e0666f7216c7459170d56df27dfcefe1689ea",
+                "reference": "513e0666f7216c7459170d56df27dfcefe1689ea",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2.0"
+                "php": ">=7.4.0"
             },
             "type": "library",
             "autoload": {
@@ -6702,9 +6718,9 @@
             ],
             "support": {
                 "issues": "https://github.com/php-fig/container/issues",
-                "source": "https://github.com/php-fig/container/tree/1.1.1"
+                "source": "https://github.com/php-fig/container/tree/1.1.2"
             },
-            "time": "2021-03-05T17:36:06+00:00"
+            "time": "2021-11-05T16:50:12+00:00"
         },
         {
             "name": "psr/log",
@@ -8090,6 +8106,7 @@
                 "issues": "https://github.com/webmozart/path-util/issues",
                 "source": "https://github.com/webmozart/path-util/tree/2.3.0"
             },
+            "abandoned": "symfony/filesystem",
             "time": "2015-12-17T08:42:14+00:00"
         }
     ],
