@@ -4236,17 +4236,17 @@
         },
         {
             "name": "drupal/matomo",
-            "version": "2.12.0",
+            "version": "2.13.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/matomo.git",
-                "reference": "7.x-2.12"
+                "reference": "7.x-2.13"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/matomo-7.x-2.12.zip",
-                "reference": "7.x-2.12",
-                "shasum": "573603182a8d2ca354631468f3bdaefc9ebf7299"
+                "url": "https://ftp.drupal.org/files/projects/matomo-7.x-2.13.zip",
+                "reference": "7.x-2.13",
+                "shasum": "5b8449ca19946623ae9bc954b6a232f76c13a0ba"
             },
             "require": {
                 "drupal/drupal": "~7.0"
@@ -4257,8 +4257,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-2.12",
-                    "datestamp": "1548968880",
+                    "version": "7.x-2.13",
+                    "datestamp": "1647617681",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -4981,26 +4981,30 @@
         },
         {
             "name": "drupal/role_delegation",
-            "version": "1.2.0",
+            "version": "1.3.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/role_delegation.git",
-                "reference": "7.x-1.2"
+                "reference": "7.x-1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/role_delegation-7.x-1.2.zip",
-                "reference": "7.x-1.2",
-                "shasum": "456e97a104400b0e4b8cd406ae38f23c908b1bb5"
+                "url": "https://ftp.drupal.org/files/projects/role_delegation-7.x-1.3.zip",
+                "reference": "7.x-1.3",
+                "shasum": "f6cc74404fd11e7315e9e15600c9be41a4e75870"
             },
             "require": {
                 "drupal/drupal": "~7.0"
             },
+            "require-dev": {
+                "drupal/admin_views": "*",
+                "drupal/views_bulk_operations": "*"
+            },
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "7.x-1.2",
-                    "datestamp": "1564594385",
+                    "version": "7.x-1.3",
+                    "datestamp": "1648055295",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
