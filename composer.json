@@ -211,7 +211,11 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
+        "sort-packages": true,
+        "platform": {
+            "php": "7.4",
+            "ext-gd": "1"
+        }
     },
     "autoload": {
         "classmap": [
